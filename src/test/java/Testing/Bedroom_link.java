@@ -28,7 +28,7 @@ public class Bedroom_link {
 		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
-		 //*[@id="add-to-cart-button"]
+		//*[@id="add-to-cart-button"]
 		  // driver.findElement(By.xpath("//*[@id='add-to-cart-button']")).click();
 		   System.out.println(driver.findElement(By.xpath("//h1[@class='product-title']")).getText());
 		   //driver.findElement(By.xpath("//button[contains(text(),'Add to Cart')]")).click();
