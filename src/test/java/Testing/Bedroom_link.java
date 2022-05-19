@@ -23,6 +23,8 @@ public class Bedroom_link {
 		driver.findElement(By.xpath("//li[@class='topnav_item bedroomunit']")).click();
 		driver.findElement(By.xpath("//span[contains(text(),'Beds with Storage')]")).click();
 		driver.findElement(By.xpath("//span[contains(text(),'Baltoro High Gloss Hydraulic Storage White Bed ')]")).click();
+		
+		// window is just change ...................
 		Set<String>ids = driver.getWindowHandles();
 		Iterator<String> it=ids.iterator();
 		String parent = it.next();
