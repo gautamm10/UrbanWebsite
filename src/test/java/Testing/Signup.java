@@ -8,22 +8,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SignInPage {
+public class Signup {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.urbanladder.com");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//span[@class='header-icon-link user-profile-icon']")).click();
-		driver.findElement(By.linkText("Log In")).click();
-		//for email section....
-		driver.findElement(By.xpath("//input[@class='email required input_authentication']")).sendKeys("gautam959880@gmail.com");
-		// for password fields
-		driver.findElement(By.xpath("//input[@class='required input_authentication']")).sendKeys("rajAn@1234");
-		driver.findElement(By.xpath("//input[@value='Log In']")).click();
-		
+		driver.findElement(By.linkText("Sign Up")).click();
+		driver.findElement(By.xpath("//input[@class='textfield email required input_authentication email-suggest']")).sendKeys("gautam959880@gmail.com");
+		driver.findElement(By.xpath("//input[@class='textfield required input_authentication']")).sendKeys("raJan@1234");
+		driver.findElement(By.xpath("//input[@value='Sign Up']")).click();
 
 	}
 
