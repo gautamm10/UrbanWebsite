@@ -19,9 +19,9 @@ public class SignInPage {
 		driver.findElement(By.xpath("//span[@class='header-icon-link user-profile-icon']")).click();
 		driver.findElement(By.linkText("Log In")).click();
 		//for email section....
-		driver.findElement(By.xpath("//input[@class='email required input_authentication']")).sendKeys("gautam959880@gmail.com");
+		driver.findElement(By.xpath("//input[@class='email required input_authentication']")).sendKeys("ga97932030@gmail.com");
 		// for password fields
-		driver.findElement(By.xpath("//input[@class='required input_authentication']")).sendKeys("rajAn@1234");
+		driver.findElement(By.xpath("//input[@class='required input_authentication']")).sendKeys("gauTam@1234");
 		driver.findElement(By.xpath("//input[@value='Log In']")).click();
 		
 
