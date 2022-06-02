@@ -79,10 +79,14 @@ public class LoginPage {
 		//after select then we can get the total price and print on the console...
 
 		System.out.println("Total price after selecting the quantity 3 is: "+driver.findElement(By.xpath("//div[@class='final-price']")).getText());
-		 // go to home page...
+		 // go to home page and click on logout...
 
 		driver.findElement(By.xpath("//img[@class='logo-img']")).click();
-		
+		Actions profile = new Actions(driver);
+		WebElement menu2 = driver.findElement(By.xpath("//li[@class='header__topBarIconList_profile-icon']"));
+		profile.moveToElement(menu2).perform();
+		driver.findElement(By.id("logout")).click();
+		driver.close();
 		
 	}
 }
